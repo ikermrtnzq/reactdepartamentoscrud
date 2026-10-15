@@ -22,12 +22,12 @@ export default class Home extends Component {
         })
     }
 
-    borrarDepartamento = (idDepartamento) => {
-        console.log("HOLA")
-
-    }
     componentDidMount = () => {
         this.obtenerDepartamentos()
+        /*if (this.props.mensaje == "Actualizar") {
+            this.obtenerDepartamentos();
+        }*/
+
     }
     render() {
         if(this.state.status){
@@ -54,7 +54,7 @@ export default class Home extends Component {
                                                 <td style={{padding: "10px",border : "1px solid #D3D3D3"}}> {departamento.nombre}  </td>
                                                 <td style={{padding: "10px",border : "1px solid #D3D3D3"}}> {departamento.localidad} </td>
                                                 <td style={{padding: "10px",border : "1px solid #D3D3D3"}}><NavLink className="btn" style={{backgroundColor: "#FFC5D3", }} to={"/update/"+ departamento.numero + "/" + departamento.nombre + "/" + departamento.localidad} >🔄</NavLink></td>
-                                                <td style={{padding: "10px",border : "1px solid #D3D3D3"}}><NavLink className="btn" style={{backgroundColor: "#FFC5D3", }} to={"/delete/"+departamento.numero} borrarDepartamento={this.borrarDepartamento} >🗑️</NavLink></td>
+                                                <td style={{padding: "10px",border : "1px solid #D3D3D3"}}><NavLink className="btn" style={{backgroundColor: "#FFC5D3", }} to={"/delete/"+departamento.numero} >🗑️</NavLink></td>
 
                                             </tr>
                                         )
