@@ -21,6 +21,9 @@ export default class Menu extends Component {
                         <li className="nav-item">
                             <NavLink style={{textDecoration : "none", color : "black"}} to="/nuevoDept">Insertar Departamento</NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink style={{textDecoration : "none", color : "black"}} to="/hospitales">Hospitales</NavLink>
+                        </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Oficios

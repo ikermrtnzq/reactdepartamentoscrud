@@ -6,6 +6,7 @@ import InsertarDepartamento from './InsertarDepartamento'
 import UpdateDepartamento from './UpdateDepartamento'
 import BorrarDepartamento from './BorrarDepartamento'
 import { useLocation } from 'react-router-dom'
+import HospitalesMultiple from './HospitalesMultiple'
 
 export default class Router extends Component {
 
@@ -34,7 +35,7 @@ export default class Router extends Component {
                     <Route path='/update/:id/:nombre/:localidad' element={<UpdateDepartaamentoElement/>}></Route>
                     <Route path='/delete/:id' element={<DeleteDepartaamentoElement recibirMensaje={this.recibirMensaje}/>}></Route>
                     <Route path='/home' element ={<HomeElement/>}></Route>
-
+                    <Route path='/hospitales' element ={<HospitalesMultiple/>}></Route>
                 </Routes>
             </BrowserRouter>
         </div>

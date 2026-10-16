@@ -37,7 +37,7 @@ export default class BorrarDepartamento extends Component {
         <div style={{display:"flex", flexDirection: "column", marginTop:"70px", padding : "20px",border : "10px solid #FFC5D3" , width: "fit-content", borderRadius: "8px", justifyContent:"center", alignItems:"center", margin: "40px auto 0"}}>
                 {
                     this.state.status &&
-                    (<Navigate to="/home" state={{mensaje : "Actualizar"}}/>)
+                    (<Navigate to="/"/>)
                 }
                 <h1>Estas seguro de que quieres borrar??</h1>
                 <div style={{display: "flex", flexDirection:"row", gap:"25px"}}>
